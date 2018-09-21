@@ -19,6 +19,16 @@ public class InfoService extends ParseService {
      */
     @WebMethod(operationName = "version")
     public String version() {
-        return "1.0.0.1-1";
+        return version_1_0_0_2();
+    }
+
+    private String version_1_0_0_2() {
+        /* Оформление файла pom.xml */
+        return "1.0.0.2";
+    }
+
+    private String version_1_0_0_1() {
+        // Инициализация проекта
+        return "1.0.0.1";
     }
 }
