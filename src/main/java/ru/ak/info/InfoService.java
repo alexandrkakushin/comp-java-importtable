@@ -19,7 +19,12 @@ public class InfoService extends ParseService {
      */
     @WebMethod(operationName = "version")
     public String version() {
-        return version_1_0_0_2();
+        return version_1_0_0_3();
+    }
+
+    private String version_1_0_0_3() {
+        // Вызов Class.forName(driver) перед соединением
+        return "1.0.0.3";
     }
 
     private String version_1_0_0_2() {

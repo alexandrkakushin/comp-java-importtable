@@ -121,8 +121,8 @@ public class JdbcParser {
         String driver;
         driver = getJdbcDriver(dbms);
         if (!driver.isEmpty()) {
+            Class.forName(driver);
             connection = DriverManager.getConnection(connectionString);
-            Class.forName(driver);                         
         }                
         return connection;        
     }
