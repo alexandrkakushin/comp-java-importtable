@@ -34,6 +34,7 @@
         <jsch.version>0.1.54</jsch.version>
 
         <maven-compiler.version>3.8.1</maven-compiler.version>
+        <maven-assembly.version>3.1.1</maven-assembly.version>
     </properties>
 
 
@@ -200,6 +201,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven-assembly.version}</version>
                 <configuration>
                     <archive>
                         <manifest>
