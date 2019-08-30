@@ -15,9 +15,9 @@ import ru.ak.importtable.parser.JdbcParser;
 import ru.ak.importtable.parser.BudgetGovRuParser;
 import ru.ak.importtable.parser.CSVParser;
 import ru.ak.importtable.parser.ExcelParser;
-import ru.ak.importtable.model.ModelDb;
-import ru.ak.importtable.model.ModelPing;
-import ru.ak.importtable.model.ModelTable;
+import ru.ak.model.ModelDb;
+import ru.ak.model.ModelPing;
+import ru.ak.model.ModelTable;
 
 
 /**

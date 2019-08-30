@@ -14,7 +14,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import ru.ak.importtable.model.*;
+import ru.ak.model.*;
 
 /**
  *
@@ -56,7 +56,7 @@ public class JdbcParser {
                     }
                     modelCells.add(modelCell); 
                 }
-                table.addRow(new ru.ak.importtable.model.ModelRow(modelCells));
+                table.addRow(new ru.ak.model.ModelRow(modelCells));
             }
             
         } catch (SQLException | ClassNotFoundException ex) {

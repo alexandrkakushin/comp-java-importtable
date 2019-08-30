@@ -11,9 +11,9 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import ru.ak.importtable.model.ModelCell;
-import ru.ak.importtable.model.ModelField;
-import ru.ak.importtable.model.ModelTable;
+import ru.ak.model.ModelCell;
+import ru.ak.model.ModelField;
+import ru.ak.model.ModelTable;
 
 /**
  *
@@ -41,7 +41,7 @@ public class DbfParser {
                     modelCell.setValue(rowObjects[i]);
                     modelCells.add(modelCell);
                 }
-                table.addRow(new ru.ak.importtable.model.ModelRow(modelCells));
+                table.addRow(new ru.ak.model.ModelRow(modelCells));
             }            
         } catch (Exception ex) {
             Logger.getLogger(JdbcParser.class.getName()).log(Level.SEVERE, null, ex);            

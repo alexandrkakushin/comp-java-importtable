@@ -9,9 +9,11 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <finalname>importtable</finalname>
+
+        <jaxws.version>2.3.2</jaxws.version>
 
         <csv.version>4.2</csv.version>
         <poi.version>3.16</poi.version>
@@ -30,10 +32,19 @@
         <jaxb.version>2.3.0</jaxb.version>
         <json.version>20180813</json.version>
         <jsch.version>0.1.54</jsch.version>
+
+        <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-ri</artifactId>
+            <version>${jaxws.version}</version>
+            <type>pom</type>
+        </dependency>        
+
         <!-- CSV -->
         <dependency>
             <groupId>com.opencsv</groupId>
@@ -181,7 +192,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>${maven-compiler.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>

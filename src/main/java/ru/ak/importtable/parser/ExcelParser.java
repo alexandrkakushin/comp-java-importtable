@@ -16,9 +16,9 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import ru.ak.importtable.model.ModelCell;
-import ru.ak.importtable.model.ModelField;
-import ru.ak.importtable.model.ModelTable;
+import ru.ak.model.ModelCell;
+import ru.ak.model.ModelField;
+import ru.ak.model.ModelTable;
 
 /**
  *
@@ -89,7 +89,7 @@ public class ExcelParser {
                         modelCells.add(modelCell);                    
                     }                    
                 }
-                table.addRow(new ru.ak.importtable.model.ModelRow(modelCells));
+                table.addRow(new ru.ak.model.ModelRow(modelCells));
             }
         } catch (Exception ex) {
             Logger.getLogger(JdbcParser.class.getName()).log(Level.SEVERE, null, ex);

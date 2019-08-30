@@ -18,9 +18,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
-import ru.ak.importtable.model.ModelCell;
-import ru.ak.importtable.model.ModelField;
-import ru.ak.importtable.model.ModelTable;
+import ru.ak.model.ModelCell;
+import ru.ak.model.ModelField;
+import ru.ak.model.ModelTable;
 
 
 /**
@@ -109,7 +109,7 @@ public class BudgetGovRuParser {
                 modelCell.setValue(value);
                 modelCells.add(modelCell);                
             }                        
-            table.addRow(new ru.ak.importtable.model.ModelRow(modelCells));
+            table.addRow(new ru.ak.model.ModelRow(modelCells));
         }        
     }
     

@@ -5,7 +5,7 @@
  */
 package ru.ak.importtable.parser;
 
-import ru.ak.importtable.model.ModelTable;
+import ru.ak.model.ModelTable;
 import com.opencsv.CSVReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -13,8 +13,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
-import ru.ak.importtable.model.ModelCell;
-import ru.ak.importtable.model.ModelField;
+import ru.ak.model.ModelCell;
+import ru.ak.model.ModelField;
 
 /**
  *
@@ -45,7 +45,7 @@ public class CSVParser {
                     }                    
                 }
                 addingFields = false;                
-                table.addRow(new ru.ak.importtable.model.ModelRow(modelCells));
+                table.addRow(new ru.ak.model.ModelRow(modelCells));
             }    
                         
         } catch (IOException ex) {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ru.ak.importtable.model;
+package ru.ak.model;
 
 import javax.xml.bind.annotation.*;
 
