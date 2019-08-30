@@ -1,6 +1,10 @@
 package ru.ak.info;
 
 import ru.ak.importtable.ParseService;
+import ru.ak.model.Build;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
@@ -15,25 +19,45 @@ public class InfoService extends ParseService {
 
     /**
      * Получение версии компоненты
-     * @return Версия компоненты
+     * @return Версия компоненты 
      */
     @WebMethod(operationName = "version")
     public String version() {
-        return version_1_0_0_3();
+        return builds().size() == 0 ? "null" : builds().get(builds().size() - 1).getVersion();
     }
 
-    private String version_1_0_0_3() {
-        // Вызов Class.forName(driver) перед соединением
-        return "1.0.0.3";
+    /** 
+    * Получение списка изменений компоненты
+    * @return Список
+    */
+    @WebMethod(operationName = "details") 
+    public List<Build> details() {
+        return builds();
+    }
+    
+    private List<Build> builds() {
+        List<Build> builds = new ArrayList<>();
+        builds.add(            
+            new Build("1.0.0.1", description_1_0_0_1()));
+
+        builds.add(            
+            new Build("1.0.0.2", description_1_0_0_2()));
+    
+        builds.add(            
+            new Build("1.0.0.3", description_1_0_0_3()));
+    
+        return builds;
     }
 
-    private String version_1_0_0_2() {
-        /* Оформление файла pom.xml */
-        return "1.0.0.2";
+    private String description_1_0_0_1() {
+        return "Создание проекта";
     }
 
-    private String version_1_0_0_1() {
-        // Инициализация проекта
-        return "1.0.0.1";
+    private String description_1_0_0_2() {
+        return "Миграция на Java 11, рефакторинг проекта";
+    }    
+
+    private String description_1_0_0_3() {
+        return "Вызов Class.forName(driver) перед соединением";
     }
 }
