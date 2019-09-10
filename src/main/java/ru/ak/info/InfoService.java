@@ -1,8 +1,6 @@
 package ru.ak.info;
 
 import ru.ak.importtable.ParseService;
-import ru.ak.model.Build;
-
 import java.util.ArrayList;
 import java.util.List;
 
