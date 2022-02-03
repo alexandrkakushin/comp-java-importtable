@@ -21,7 +21,7 @@
         <msaccess.version>4.0.4</msaccess.version>
 
         <!-- JDBC drivers -->
-        <postgresql.version>42.2.4</postgresql.version>
+        <postgresql.version>42.2.25</postgresql.version>
         <sqlite.version>3.20.0</sqlite.version>
         <mssql.version>7.0.0.jre8</mssql.version>
         <mysql.version>8.0.16</mysql.version>
