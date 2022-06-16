@@ -13,7 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <finalname>importtable</finalname>
 
-        <jaxws.version>2.3.2</jaxws.version>
+        <jaxws.version>2.3.4</jaxws.version>
 
         <csv.version>4.2</csv.version>
         <poi.version>3.16</poi.version>
