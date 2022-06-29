@@ -16,7 +16,7 @@
         <jaxws.version>2.3.2</jaxws.version>
 
         <csv.version>4.2</csv.version>
-        <poi.version>3.16</poi.version>
+        <poi.version>4.1.1</poi.version>
         <dbf.version>1.9.2</dbf.version>
         <msaccess.version>4.0.4</msaccess.version>
 
