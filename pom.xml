@@ -30,7 +30,7 @@
 
         <junit.version>4.13.1</junit.version>
         <jaxb.version>2.3.0</jaxb.version>
-        <json.version>20180813</json.version>
+        <json.version>20230227</json.version>
         <jsch.version>0.1.54</jsch.version>
 
         <maven-compiler.version>3.8.1</maven-compiler.version>
